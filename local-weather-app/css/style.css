@@ -1,0 +1,30 @@
+h1 {
+  font-family: Georgia;
+  color: White;
+  font-size: 40px;
+}
+
+h3{
+  font-family: Lobster;
+  color: lightblue;
+}
+
+h2{
+  font-family: signika;
+  
+}
+body{
+//  background-image: url("http://www.dennisgoulet.us/dg/wp-content/uploads/2011/01/LS-1218-003-thumbnail.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100% 250%;
+}
+
+.main-info {
+  color: white;
+  font-size: 24px;
+}
+
+#country-flag {
+  height: 30px;
+}
