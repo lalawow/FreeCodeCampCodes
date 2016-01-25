@@ -9,7 +9,7 @@
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     
     
@@ -19,27 +19,43 @@
   <body>
 
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-
+<!--
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
+-->
 <div class="container-fluid">
   <div class="title text-center">
-  <h1>Local Weather Outside</h1>
-  <h3>A Free Code Camp Project</h3>
- </div>
-  <div class="main-info text-center">
+    <h1>Local Weather Outside</h1>
+    <h3>A Free Code Camp Project</h3>
+  </div>
+  <div class="main-info">
     <div class="row">
-      <div ><img src="" id="country-flag"/>
-      <div id="city">city</div>
-    <div id="temperature-button"></div>
-      </div></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-3">
+      <div class= "col-md-4"><img src="" id="country-flag" class="pull-right"/></div>
+      <div id="city" class="col-md-8 text-center"></div>
+
+      </div>
+      <div class="col-md-5"></div>
+  </div>
+  <div class="interval">
+
+</div>
     <div class="row">
       <div class="col-md-3"></div>
       
-      <div class="row col-md-6">
-    <div id="weather" class="col-md-4"></div>
-    <div id="temperature" class="col-md-4"></div>
-    <div id="wind" class="col-md-4"></div>
+      <div class="row col-md-6 text-center">
+    <div id="weather" class="col-md-4 col-xs-4">
+      <div id="weather-state"></div>
+      <div ><img src="" id="weather-icon"/></div>
+        </div>
+    <div id="temperature" class="col-md-4 col-xs-4">
+      <div id="temperature-data"></div>
+      <div id="temperature-button" class="btn-group">
+      <button type="button" class="btn btn-sm btn-default active" id="c-degree">&deg;C</button>
+<button type="button" class="btn btn-sm btn-default" id="f-degree">&deg;F</button>
+        </div>
+        </div>
+    <div id="wind" class="col-md-4 col-xs-4"></div>
     </div>
       <div class="col-md-3"></div>
     </div>

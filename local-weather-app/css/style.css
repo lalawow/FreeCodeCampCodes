@@ -14,10 +14,11 @@ h2{
   
 }
 body{
-//  background-image: url("http://www.dennisgoulet.us/dg/wp-content/uploads/2011/01/LS-1218-003-thumbnail.jpg");
+// background-image: url("https://ridebully.files.wordpress.com/2012/06/img_0224.jpg");
     background-color: black;
     background-repeat: no-repeat;
-    background-size: 100% 250%;
+    background-size: cover;
+//    background-size: 100% 250%;
 }
 
 .main-info {
@@ -27,4 +28,8 @@ body{
 
 #country-flag {
   height: 30px;
+}
+
+.interval {
+  height: 60px;
 }
