@@ -1,0 +1,50 @@
+h1 {
+  font-family: Lobster;
+  color: White;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: Lobster;
+  color: lightblue;
+}
+
+h2 {
+  font-family: signika;
+}
+
+body {
+  //  background-image: url("http://www.dennisgoulet.us/dg/wp-content/uploads/2011/01/LS-1218-003-thumbnail.jpg");
+  background-color: brown;
+  background-repeat: no-repeat;
+  background-size: 100% 250%;
+}
+
+.frame {}
+
+.post {
+  width: 180px;
+  height: 270px;
+  background-color: white;
+  color: purple;
+  padding: 0px;
+  margin: 15px;
+  float: left;
+  border-radius: 10px;
+}
+
+.post-img {
+  width: 180px;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-post {}
+
+.post-data {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
