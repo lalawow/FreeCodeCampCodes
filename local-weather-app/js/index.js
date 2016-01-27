@@ -37,13 +37,14 @@ $(document).ready(function(){
          "cod":200} 
 */
 	weatherInfo = weather
-	$("#city").html(weatherInfo.name+", "+locationInfo.region)
+	$("#city").html('<img src="" id="country-flag"/> '+weatherInfo.name+", "+locationInfo.region)
   console.log(weatherInfo.weather[0].main,weatherInfo.weather[0].description)
- setBgImg(weatherInfo.weather[0].id)
+  setBgImg(weatherInfo.weather[0].id)
+ // setBgImg(5)
 	$("#weather-state").html(weatherInfo.weather[0].main)
   $("#weather-icon").attr("src","http://openweathermap.org/img/w/"+weatherInfo.weather[0].icon+".png")
 	$("#temperature-data").html(Math.floor((weatherInfo.main.temp-273.15)*10)/10+"&deg;C")
-	$("#wind").html(weatherInfo.wind.speed)
+	$("#wind").html(weatherInfo.wind.speed+"m/s")
   $("#country-flag").attr("src","https://raw.githubusercontent.com/googlei18n/region-flags/master/png/"+weatherInfo.sys.country+".png")
 //  	console.log(weather)
   })
@@ -86,6 +87,12 @@ function setBgImg(id) {
     url = weatherImgUrl[Math.florr(id/100)]
   } else {
     url = weatherImgUrl[80]
+  }
+  if (url==weatherImgUrl[6]) {
+    $(".main-info").css("color","lemonchiffon");
+  }
+  if (url==weatherImgUrl[5]) {
+    $(".main-info").css("color","silver");
   }
 
   $("body").css("background-image",'url("'+url+'")')

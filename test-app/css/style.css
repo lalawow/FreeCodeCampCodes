@@ -1,0 +1,23 @@
+h1 {
+  font-family: Lobster;
+  color: white;
+  font-size: 50px;
+}
+
+body{
+  background-image: url("http://www.dennisgoulet.us/dg/wp-content/uploads/2011/01/LS-1218-003-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+}
+.description {
+  color: white;
+  font-size: 26px;
+  
+}
+
+.quote-area {
+  background-color: lightgray;
+  border-round: 10px;
+  font-family: Georgia;
+  font-size: 24px;
+}

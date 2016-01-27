@@ -23,7 +23,7 @@ body{
 
 .main-info {
   color: white;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 #country-flag {
@@ -32,4 +32,8 @@ body{
 
 .interval {
   height: 60px;
+}
+
+.main-info {
+  font-family: "Open Sans";
 }
