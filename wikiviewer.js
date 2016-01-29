@@ -19,8 +19,46 @@
 }
 
 
-https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=hello&callback=angular.callbacks._3
+ 
 
 
 https://en.wikipedia.org/w/
 api.php?action=query&formatversion=2&prop=pageimages|pageterms&titles=Albert%20Einstein|Albert%20Ellis|Albert%20Estopinal&pilimit=3&piprop=thumbnail&wbptterms=description&redirects= 
+
+
+{"batchcomplete":"",
+"continue":{"gsroffset":10,"continue":"gsroffset||"},
+"query":{
+    "pages":{
+        "13834":{
+            "pageid":13834,"ns":0,
+            "title":"\"Hello, World!\" program",
+            "index":4,
+            "thumbnail":{"source":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Hello_World%21_in_Firefox_31.png/50px-Hello_World%21_in_Firefox_31.png","width":50,"height":30},
+            "pageimage":"Hello_World!_in_Firefox_31.png",
+            "extract":"A \"Hello, World!\" program is a computer program that outputs \"Hello, World!\" on a display device."},
+        "6710844":{
+            "pageid":6710844,"ns":0,
+            "title":"Hello",
+            "index":1,
+            "extract":"Hello is a salutation or greeting in the English language."},
+        "1895130":{
+            "pageid":1895130,
+            "ns":0,
+            "title":"Hello, Dolly!",
+            "index":3,
+            "extract":"Hello, Dolly!"},
+        "4877259":{"pageid":4877259,"ns":0,"title":"Hello, Hello, I'm Back Again","index":9,"thumbnail":{"source":"https://upload.wikimedia.org/wikipedia/en/thumb/6/60/The_Young_Gods_Did_You_Miss_Me.jpg/50px-The_Young_Gods_Did_You_Miss_Me.jpg","width":50,"height":48},"pageimage":"The_Young_Gods_Did_You_Miss_Me.jpg","extract":"\"Hello, Hello, I'm Back Again\" is a 1973 hit single performed by Gary Glitter and co-written by Glitter and his producer Mike Leander."},
+        "3333421":{"pageid":3333421,"ns":0,"title":"Hello (disambiguation)","index":5,"extract":"Hello is a greeting in the English language."},
+        "1122016":{"pageid":1122016,"ns":0,"title":"Hello (magazine)","index":2,"thumbnail":{"source":"https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Hello_%28magazine%29_cover.jpg/37px-Hello_%28magazine%29_cover.jpg","width":37,"height":50},"pageimage":"Hello_(magazine)_cover.jpg","extract":"Hello (stylised as HELLO!) is a weekly magazine specialising in celebrity news and human-interest stories, published in the United Kingdom since 1988."},
+        "31203246":{"pageid":31203246,"ns":0,"title":"Hello Baby","index":6,"thumbnail":{"source":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/MBLAQ_at_the_press_conference_of_KBS_Joy_Hello_Baby%2C_on_January_18%2C_2012_from_acrofan.jpg/50px-MBLAQ_at_the_press_conference_of_KBS_Joy_Hello_Baby%2C_on_January_18%2C_2012_from_acrofan.jpg","width":50,"height":30},"pageimage":"MBLAQ_at_the_press_conference_of_KBS_Joy_Hello_Baby,_on_January_18,_2012_from_acrofan.jpg","extract":"Hello Baby (Hangul: \ud5ec\ub85c \ubca0\uc774\ube44) is a South Korean reality show where celebrities experience parenthood by raising children ages 5 and under."},
+        "42663426":{"pageid":42663426,"ns":0,"title":"Hello Hello","index":7,"extract":"Hello Hello may refer to:"},
+        "54295":{"pageid":54295,"ns":0,"title":"Hello Kitty","index":8,"thumbnail":{"source":"https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Hello_kitty_character_portrait.png/39px-Hello_kitty_character_portrait.png","width":39,"height":50},"pageimage":"Hello_kitty_character_portrait.png","extract":"Hello Kitty (Japanese: \u30cf\u30ed\u30fc\u30fb\u30ad\u30c6\u30a3, Hepburn: Har\u014d Kiti), (full name: Kitty White (\u30ad\u30c6\u30a3\u30fb\u30db\u30ef\u30a4\u30c8, Kiti Howaito)) is a fictional character produced by the Japanese company Sanrio, created by Yuko Shimizu and currently designed by Yuko Yamaguchi."},
+        "46442563":{"pageid":46442563,"ns":0,"title":"Hello Pro Kenshusei","index":10,"extract":"Hello Pro Kenshusei (\u30cf\u30ed\u30d7\u30ed\u7814\u4fee\u751f, Haro Puro Kensh\u016bsei), formerly Hello Pro Egg (\u30cf\u30ed\u30d7\u30ed\u30a8\u30c3\u30b0), is a trainee group within Hello!"}
+    }
+},
+"limits":{"pageimages":50,"extracts":20}
+}
+
+
+http://en.wikipedia.org/?curid=35495
