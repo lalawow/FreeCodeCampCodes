@@ -1,13 +1,11 @@
 $(document).ready(function(){
-	$.ajax({
-  url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=hellp",
-  data: {format: 'json' },
-  dataType: 'jsonp',
-  success: function (x) {
-  	console.log(x)
-    showResult(x)
-  }
-})
+	$("#icon-search").click(function(event){
+		$("#icon-search-div").addClass("no-display")
+		$("#search-suggestion").addClass("no-display")
+		$("#search-form").removeClass("no-display")
+	})
+
+
 
 
 })
@@ -17,13 +15,26 @@ function searchText() {
 	
     var sTextContent=document.getElementById("js-search-box-text").value
     console.log(sTextContent)
-	
-	event.preventDefault()
+    
+
+event.preventDefault()
+
+    	$.ajax({
+  url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch="+sTextContent,
+  data: {format: 'json' },
+  dataType: 'jsonp',
+  success: function (x) {
+  	console.log(x)
+    showResult(x)
+  }
+}) 
+
 }
 
 function showResult(data) {
-	$(".search-result").html("")
+	$(".search-results").html("")
 	var pages = data.query.pages
+	moveSearchbox()
 	console.log(pages)
 	resultFrame(pages)
 	resultFillIn(pages)
@@ -58,4 +69,8 @@ function resultFillIn(pages) {
 		pageCell.children(".result-title").text(pages[page].title)
 		pageCell.children(".result-content").text(pages[page].extract)
 	}
+}
+
+function moveSearchbox() {
+	$("#js-content-panel").removeClass("vertical-middle");
 }

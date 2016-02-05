@@ -15,45 +15,93 @@ h2{
 }
 body{
 //  background-image: url("http://www.dennisgoulet.us/dg/wp-content/uploads/2011/01/LS-1218-003-thumbnail.jpg");
-    background-color: black;
+    background-color: #293541;
     background-repeat: no-repeat;
     background-size: 100% 250%;
+
 }
 
+
+
 .result-page {
-  color: Yellow;
+  color: #35404A;
   height: 130px;
-  padding: 20px;
-  margin: 10px;
+  padding: 10px auto;
+  margin: 20px;
+  margin-left: 10%;
+  margin-right:10%;
 }
 
 .result-title {
   font-size: 30px;
+  padding-bottom: 5px;
 }
 
 .result-main {
-  background-color: grey;
+  background-color: #B0BFCD;
   float: left;
   padding: 10px;
-  width: 80%;
+  width: 95%;
   height: 100%;
   cursor: pointer;
   cursor: hand;
+    border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
 }
 
 .result-highlight {
-  background-color: white;
+  background-color: #6A8289;
   float: left;
 
   height: 100%;
   padding: 5px;
+    border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 
 }
 
 .result-page:hover .result-highlight {
-  background-color: orange;
+  background-color: #4B88C3;
 }
 
 .content-panel {
+//    position: absolute;
+
+    left: 0;
+    right: 0;
+    width: 50%;
+
+    margin: auto;
   color: orange;
+
+//  transform: translateY(-50%);
+}
+
+.vertical-middle {
+  position: absolute;
+      top: 0;
+    bottom: 0;
+    height: 30%;
+    margin: auto;
+
+}
+
+.no-display {
+  display: none;
+}
+
+#search-form {
+  background-color: grey; 
+  width: 220px;
+  margin: auto;
+}
+
+.close-icon {
+  background-color: grey;
+  border-style:none;
+}
+
+.fa-remove{
+  background-color: grey;
 }

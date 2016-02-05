@@ -27,19 +27,20 @@
     <h1>Wikipedia Viewer</h1>
     <h3>a Free Code Camp Project</h3>
   </div>
-  <div class="content-panel text-center">
+  <div class="content-panel text-center vertical-middle" id="js-content-panel">
     <div class="random-post text-center"><a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">Click here for a random article</a>
     </div>
     <div class="or">OR</div>
     <div class="search-box-part">
       <div class="search-box">
-        <i class="fa fa-search fa-4x"></i>
-        	<form>
-	<input type="text" name="focus" placeholder="Enter search term" id="js-search-box-text"       onkeydown = "if (event.keyCode == 13) searchText()"></input>
-            <button class="close-icon" type="reset"><i class="fa fa-remove"></i></button> 
+      <div id = "icon-search-div">
+        <i class="fa fa-search fa-4x" id="icon-search"></i></div>
+        <form class="no-display" id="search-form">
+	<input type="text" name="focus" placeholder="Enter search term" id="js-search-box-text"       onkeydown = "if (event.keyCode == 13) searchText()" ></input>
+            <button class="close-icon" type="reset"><i class="fa fa-remove"></i></button>
 	</form>
       </div>
-      <div class="search-suggestion">Click icon to search</div>
+      <div class="search-suggestion" id="search-suggestion">Click icon to search</div>
     
     </div>
 
